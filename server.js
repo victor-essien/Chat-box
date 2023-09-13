@@ -1,5 +1,7 @@
 import express  from 'express'
 import  OpenAI  from 'openai'
+import 'abortcontroller-polyfill';
+
 import { config } from "dotenv";
 
 
