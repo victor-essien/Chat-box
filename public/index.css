@@ -1,0 +1,63 @@
+        body{
+        padding: 0;
+        margin: 0;
+           
+        }
+        .cont-area{
+            background-color: rgb(2, 29, 29);
+        }
+        #chat-area {
+            position: relative;
+            margin: 0 auto;
+            width: 85%;
+            height: 89vh;
+            overflow:scroll;
+            border: none ;
+          
+           
+        }
+
+        .input {  
+                position: relative;
+                bottom: 30px;
+          display: flex;
+          justify-content: center;
+          gap: 4px;
+        }
+
+        .submit-area{
+            justify-content: center;
+            display: flex;
+            margin: 20px auto;
+            width: 80%;            
+        }       
+
+        textarea {
+            width: 80%;
+          background-color: #4c5a6d;
+            border-radius: 12px;
+            outline: none;
+            font-size: large;
+            height: 49px;
+        }
+
+        .box {
+            width: 96%;
+            margin: 0 auto;
+            padding: 10px 10px;
+            background-color: #C4DBFE;
+            margin: 10px auto;            
+        }
+
+        .answer {
+            background-color: aquamarine;
+        }
+
+        button {
+            background-color: #004089;
+            color: white;
+            height: 49px;
+            padding: 12px 12px;
+            border-radius: 5px;
+            border: none;
+        }
