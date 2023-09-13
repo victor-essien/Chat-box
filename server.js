@@ -1,13 +1,15 @@
 import express  from 'express'
 import  OpenAI  from 'openai'
 import { config } from "dotenv";
-config();
+
 
 
 
 const app = express()
 app.use(express.static('public')) 
 app.use(express.json())
+config();
+const PORT = process.env.PORT || 3030
 const API_KEY = process.env.API_KEY;
 const openai = new OpenAI ({
     apiKey :API_KEY
@@ -30,6 +32,6 @@ app.post('/chat', async (req, res)=> {
     }
   })
   
-app.listen(5000, () => {
-    console.log('Server is running on port 5000')
+app.listen(PORT, () => {
+    console.log(`Server is running on port ${PORT}`)
 })
