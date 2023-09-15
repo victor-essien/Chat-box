@@ -4,19 +4,17 @@ import fetch from "node-fetch";
 import bodyParser from "body-parser";
 import { config } from "dotenv";
 import path from "path";
+import { AbortController } from 'abort-controller';
+global.AbortController = AbortController;
 
-// Serve static files from the 'public' directory
 
-// const __filename = fileURLToPath(import.meta.url);
-// const __dirname = dirname(__filename);
+
+
 const app = express();
 
-//app.use(express.static('public'))
-//app.use(express.static(path.join(process.cwd(), 'public'), { 'extensions': ['css'] }));
-//app.use(express.static('public'))
+// Serve static files from the 'public' directory
 app.use(express.static(path.join(process.cwd(), "public")));
-//app.use(express.static('public'));
-//app.use(express.static(__dirname + '/public'));
+
 
 app.use(express.json());
 config();
