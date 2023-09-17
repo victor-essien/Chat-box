@@ -4,8 +4,6 @@ import fetch from "node-fetch";
 import bodyParser from "body-parser";
 import { config } from "dotenv";
 import path from "path";
-import { AbortController } from 'abort-controller';
-global.AbortController = AbortController;
 
 
 
